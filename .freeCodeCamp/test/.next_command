@@ -34,3 +34,8 @@ pg_dump -h localhost -U myuser -d universe -F p -b -v -f universe.sql
 pg_dump -h localhost -U user -d universe -F p -b -v -f universe.sql
 pg_dump -h localhost -U freecodecamp -d universe -F p -b -v -f universe.sql
 ls --color=auto
+ls --color=auto
+pg_dump -cC --inserts -U freecodecamp universe > universe.sql
+ls --color=auto
+ls --color=auto
+ls --color=auto
