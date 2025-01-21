@@ -30,3 +30,7 @@ __vsc_dbg_trap="$(__vsc_get_trap DEBUG)"
 trap '__vsc_preexec_all "$_"' DEBUG
 __vsc_original_prompt_command=${PROMPT_COMMAND:-}
 psql --username=freecodecamp --dbname=postgres
+pg_dump -h localhost -U myuser -d universe -F p -b -v -f universe.sql
+pg_dump -h localhost -U user -d universe -F p -b -v -f universe.sql
+pg_dump -h localhost -U freecodecamp -d universe -F p -b -v -f universe.sql
+ls --color=auto
